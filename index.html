@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- INLINE JAVASCRIPT -->
+    <a href="javascript:void(0)" onclick="var abc='hello'; alert(abc);">InlineJavascript</a>
+    <br>
+
+    <img src="assets/wa.jpeg" onmouseover="src='assets/wap.png'" onmouseout="src='assets/wa.jpeg'">
+    <br>
+    
+    First Name:
+    <input type="text" size="30"  onfocus="this.style.backgroundColor='lightblue'" onblur="this.style.backgroundColor='white'">
+    <br>
+
+    <!-- INTERNAL JAVASCRIPT -->
+    <button onclick="my()">
+        Enter
+        </button>
+        <script>
+        function my(){
+        //console.log(Events execute successfully);
+        var firstName = prompt("Enter First Name");
+        var lastName = prompt("Enter Last Name");
+        var sum = firstName +" "+ lastName;
+        console.log(sum);
+        }
+        </script>
+        <br>
+
+
+
+
+        <!-- EXTERNAL JAVASCRIPT -->
+    <a href="javascript:void(0)" onclick="popup('hi')">Click Here!</a>
+    <br>
+
+
+
+</body>
+<script src="./app.js"></script>
+</html>
