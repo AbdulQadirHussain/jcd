@@ -92,3 +92,41 @@ console.log(cal);
 var calulate = deal2.calculateCustom(12);
 console.log(calulate);
 */
+
+
+/*
+function Student(name, age){
+    this.name = name;
+    this.age = age; 
+}
+
+   Student.prototype.abc = function(){
+    console.log(this.name + " is studying");
+   }
+
+var b = new Student('Ali', 20);
+console.log(b.name);
+console.log(b);
+b.abc();
+*/
+
+
+/*
+function Student(name, age){
+    this.name = name;
+    this.age = age;
+    this.email = "abc@gmail.com";
+}
+
+var obj = new Student("Arsalan",20);
+alert("name" in obj);
+alert("email" in obj);
+var count = 0;
+for(var key in obj){
+    alert(obj[key])
+    count++;
+}
+console.log(count);
+
+console.log(obj.hasOwnProperty("name"));
+*/

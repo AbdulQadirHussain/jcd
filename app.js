@@ -43,9 +43,9 @@ var numberOfStars = Math.floor(improvedNum);
 
 
 // EVENT FUNCTION
-function popup(message){
-    alert(message);
-}
+// function popup(message){
+//     alert(message);
+// }
 
 
 
