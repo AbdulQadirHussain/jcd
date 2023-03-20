@@ -6,7 +6,7 @@ for(var i = 0; i < arrnum.length; i++){
      console.log(i , arrnum[i]);
 }
 // OR ForEach Function
-arrnum.forEach(function(value, index){ 
+arrnum.forEach(function(value, index){
     console.log(value , index);
 })
 // OR Can be done with forEach LAMBDA FUNCTION
@@ -21,7 +21,7 @@ arrnum.forEach(printname);
 */
 
 
-// MAP / FILTER / FIND / REDUCE
+// MAP / FILTER / FIND / REDUCE / FILL
 /*
 var names = ['Ali', 'Ahmed', 'Asad'];
 names.forEach((v, i) => {
@@ -52,8 +52,8 @@ console.log(names); //Still the same it isn't mutate
 var names = ['Ali', 'Ahmed', 'Asad'];
 var newfilternames = []; //Null Array
 for(var i = 0; i < names.length; i++){
-    if(names[i] === 'Ahmed'){   
-       continue; 
+    if(names[i] === 'Ahmed'){
+       continue;
     }
     newfilternames.push(names[i]); //Push Remaining values in Null Array
 }
@@ -86,7 +86,7 @@ var calreduce = Calculate.reduce((acc, v)=>{
     console.log(`acc`, acc);
     console.log(`value`, v)
     return acc + v;
-    
+
 }, 0)//add value in accumulator to plus
 console.log(calreduce);
 
@@ -101,7 +101,7 @@ console.log(namesreduce);
 
 // ADD NAME WITH REDUCE AND PUSH
 var names = ['Ali', 'Ahmed', 'Asad'];
-var addnamesreduce = names.reduce((acc,v)=>{ 
+var addnamesreduce = names.reduce((acc,v)=>{
     acc.push(`Mr `+ v);
     return acc;
 }, [])
@@ -109,6 +109,11 @@ console.log(addnamesreduce);
 */
 
 
+// FILL FUNCTION
+/*
+console.log(new Array(10));
+console.log(new Array(10).fill('A'));
+*/
 
 
 /*
@@ -136,4 +141,18 @@ var ab = multi(8,2,4);
 console.log(ab);
 
 num.map(v => v * v);
+*/
+
+
+// TO PRINT EACH VALUE VIA FOREACH & LAMBDA
+/*
+['A','B','C'].forEach((v) => console.log(v));
+// OR
+const print = (e) => console.log(e);
+['A','B','C'].forEach(print);
+//OR
+function print2(e){
+    console.log(e)
+}
+['A','B','C'].forEach(print2);
 */
