@@ -1,0 +1,32 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Day;
+(function (Day) {
+    Day[Day["Monday"] = 0] = "Monday";
+    Day[Day["Tuesday"] = 1] = "Tuesday";
+    Day[Day["Wednesday"] = 2] = "Wednesday";
+    Day[Day["Thursday"] = 3] = "Thursday";
+    Day[Day["Friday"] = 4] = "Friday";
+    Day[Day["Saturday"] = 5] = "Saturday";
+    Day[Day["Sunday"] = 6] = "Sunday";
+})(Day || (Day = {}));
+;
+var holiday = Day.Saturday;
+console.log("Holiday: ", holiday);
+var month;
+(function (month) {
+    month[month["January"] = 1] = "January";
+    month[month["February"] = 2] = "February";
+    month[month["March"] = 3] = "March";
+    month[month["April"] = 4] = "April";
+    month[month["May"] = 5] = "May";
+    month[month["June"] = 6] = "June";
+    month[month["July"] = 7] = "July";
+    month[month["August"] = 8] = "August";
+    month[month["September"] = 9] = "September";
+    month[month["October"] = 10] = "October";
+    month[month["November"] = 11] = "November";
+    month[month["December"] = 12] = "December";
+})(month || (month = {}));
+var anyMonth = month.February;
+console.log(anyMonth);
