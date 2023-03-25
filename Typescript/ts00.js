@@ -15,6 +15,15 @@ function abc(a, b) {
     return new Promise(function (res) { return res("Promise Function"); });
 }
 abc('ab', 'cd');
+function returnMessage(message) {
+    return "This is ".concat(message);
+}
+returnMessage("sparta");
+returnMessage("typescript");
+function voidFunc(message) {
+    console.log("This is ".concat(message));
+}
+voidFunc("sparta");
 //  OBJECT
 var student = { name: 'Ali', age: 20, courses: ['isl', 'physics'], dept: [2],
     5: 'abc', id: 1 };

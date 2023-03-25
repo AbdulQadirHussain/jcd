@@ -1,3 +1,28 @@
+// Template Literals / Backticks
+/*
+var firstName = `Abdul`;
+var lastName = `Qadir`;
+console.log(`My fisrt name is ${firstName} & my last name is ${lastName}`);
+*/
+
+
+
+
+// TERNARY OPERATOR (Condition) ? true : false
+/*
+const checkTernaryCondition = (2<4) ? "yes":"no";
+console.log(checkTernaryCondition);
+
+const isStudent = true;
+const isDiscount = () => {
+    return isStudent === !true ? 20 : 0;
+}
+var result = isDiscount();
+console.log(result);
+*/
+
+
+
 // ARRAY FOR / FOREACH WITH LAMBDA FUNCTION
 /*
 var arrnum = [5,3,7,43,44,56,78,87];

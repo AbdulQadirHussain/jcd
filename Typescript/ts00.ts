@@ -24,6 +24,20 @@ function abc(a: string, b: string): Promise<string>{
 abc('ab', 'cd');
 
 
+function returnMessage(message: string): string{
+    return `This is ${message}`;
+}
+returnMessage(`sparta`);
+returnMessage(`typescript`);
+
+
+function voidFunc(message: string): void{
+    console.log(`This is ${message}`);
+}
+voidFunc(`sparta`);
+
+
+
 
 //  OBJECT
 var student: {
@@ -36,5 +50,4 @@ var student: {
 } =
 {name: 'Ali', age: 20, courses: ['isl', 'physics'], dept: [2], 
 5: 'abc', id: 1};
-
 

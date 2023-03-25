@@ -12,7 +12,3 @@ var allStudent = [st];
 console.log(allStudent);
 var allStudents = ['abc', 123];
 console.log(allStudents);
-function petIs(pet) {
-    console.log("*", pet.species);
-}
-petIs({ name: "eagle", species: "birds" });

@@ -7,6 +7,7 @@ interface Student {
     address: string | number;
     city?: string;
     country?: string;
+    sayName?(): string;
 }
 
 var st: Student = {
@@ -24,11 +25,14 @@ console.log(allStudent);
 var allStudents: stringNumber[] = ['abc', 123];
 console.log(allStudents);
 
-
+// st.sayName = ():string => {
+//     return `My name is ${name}`;
+// }
+// console.log(st.sayName());
 
 
 // CREATING INTERFACE AND INHERIT WITH ANOTHER INTERFACE WITH TYPE
-type Species = `cat` | `dog` | `birds`;
+/*type Species = `cat` | `dog` | `birds`;
 
 interface Pet {
     species: Species;
@@ -48,5 +52,5 @@ function petIs(pet: Bird){
     console.log(`*`, pet.species);
 }
 petIs({name: `eagle`,species: `birds`});
-
+*/
 export {}; //Write export {}; at the end of the file to resolve the issue of Duplicate function implementations
