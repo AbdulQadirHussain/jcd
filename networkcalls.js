@@ -256,3 +256,78 @@ if (true) {
  }
 */
 
+
+
+
+// PROMISE ALL
+// INDIVIDUAL PROMISES RETURN
+/*
+const getUser = () => {
+    return Promise.resolve({id: 12, name: `Ali`});
+}
+const getPosts = (id) => {
+    return Promise.resolve({id, posts: []});
+}
+const getGroups = (id) => {
+    return Promise.resolve({id, groups: []});
+}
+const getResults = (id) => {
+    return Promise.resolve({id, results: []});
+}
+getUser()
+.then((user) => {
+    console.log(user);
+})
+*/
+
+
+// PROMISE.ALL
+/*
+const getUser = () => {
+    return Promise.resolve({id: 12, name: `Ali`});
+}
+const getPosts = (id) => {
+    return Promise.resolve({id, posts: []});
+}
+const getGroups = (id) => {
+    return Promise.resolve({id, groups: []});
+}
+const getResults = (id) => {
+    return Promise.resolve({id, results: []});
+}
+
+getUser()
+.then(async(user)=>{
+    console.log(user)
+let allPromises = await Promise.all([getPosts(user?.id), 
+    getGroups(user?.id), getResults(user?.id)]);
+    let [posts, groups, results] = allPromises;
+    console.log(`All Promise `, allPromises); 
+})
+*/
+
+
+// PROMISE.ALLSETTLED
+/*
+const getUser = () => {
+    return Promise.resolve({id: 12, name: `Ali`});
+}
+const getPosts = (id) => {
+    return Promise.resolve({id, posts: []});
+}
+const getGroups = (id) => {
+    return Promise.resolve({id, groups: []});
+}
+const getResults = (id) => {
+    return Promise.resolve({id, results: []});
+}
+
+getUser()
+.then(async(user)=>{
+    console.log(user)
+let allPromisesSettled = await Promise.allSettled([getPosts(user?.id), 
+    getGroups(user?.id), getResults(user?.id)]);
+    let [posts, groups, results] = allPromisesSettled;
+    console.log(`All Promise `, allPromisesSettled); 
+})
+*/
